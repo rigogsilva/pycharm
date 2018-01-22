@@ -1,0 +1,5 @@
+<application>
+  <component name="IntentionManagerSettings">
+    <ignoreAction name="Python/Convert list comprehensions to for loop" />
+  </component>
+</application>
