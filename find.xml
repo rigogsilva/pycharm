@@ -32,10 +32,10 @@
       <mask>*.jso</mask>
       <mask>*.js</mask>
       <mask>*.j</mask>
-      <mask>*</mask>
       <mask>*.s</mask>
       <mask>*.sql</mask>
       <mask>*.sq</mask>
+      <mask>*</mask>
       <mask>*.</mask>
       <mask>*.p</mask>
       <mask>*.py</mask>
