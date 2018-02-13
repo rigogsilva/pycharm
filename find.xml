@@ -7,8 +7,6 @@
     <option name="SEARCH_SCOPE" value="Current File" />
     <option name="FILE_MASK" value="*.py" />
     <recentFileMasks>
-      <mask>*.css</mask>
-      <mask>*.mxml</mask>
       <mask>s*.py</mask>
       <mask>S*.py</mask>
       <mask>S0*.py</mask>
@@ -36,6 +34,8 @@
       <mask>*</mask>
       <mask>*.</mask>
       <mask>*.p</mask>
+      <mask>t*.py</mask>
+      <mask>test*.py</mask>
       <mask>*.py</mask>
     </recentFileMasks>
   </component>
