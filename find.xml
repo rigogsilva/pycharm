@@ -1,12 +1,12 @@
 <application>
   <component name="FindSettings">
     <option name="caseSensitive" value="true" />
-    <option name="customScope" value="Current File" />
-    <option name="defaultScopeName" value="Current File" />
+    <option name="customScope" value="All Places" />
+    <option name="defaultScopeName" value="All Places" />
     <option name="localCaseSensitive" value="true" />
     <option name="CASE_SENSITIVE_SEARCH" value="true" />
     <option name="LOCAL_CASE_SENSITIVE_SEARCH" value="true" />
-    <option name="SEARCH_SCOPE" value="Current File" />
+    <option name="SEARCH_SCOPE" value="All Places" />
     <option name="FILE_MASK" value="*.py" />
     <recentFileMasks>
       <mask>s*.py</mask>
@@ -28,7 +28,6 @@
       <mask>*.jp</mask>
       <mask>*.sql</mask>
       <mask>*.sq</mask>
-      <mask>*</mask>
       <mask>t*.py</mask>
       <mask>test*.py</mask>
       <mask>*.s</mask>
@@ -36,6 +35,7 @@
       <mask>*.jso</mask>
       <mask>*.js</mask>
       <mask>*.j</mask>
+      <mask>*</mask>
       <mask>*.</mask>
       <mask>*.p</mask>
       <mask>*.py</mask>
