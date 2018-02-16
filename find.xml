@@ -7,7 +7,7 @@
     <option name="CASE_SENSITIVE_SEARCH" value="true" />
     <option name="LOCAL_CASE_SENSITIVE_SEARCH" value="true" />
     <option name="SEARCH_SCOPE" value="Current File" />
-    <option name="FILE_MASK" value="*.json" />
+    <option name="FILE_MASK" value="*.py" />
     <recentFileMasks>
       <mask>s*.py</mask>
       <mask>S*.py</mask>
@@ -26,19 +26,19 @@
       <mask>*..</mask>
       <mask>*.n</mask>
       <mask>*.jp</mask>
-      <mask>*.js</mask>
       <mask>*.sql</mask>
       <mask>*.sq</mask>
       <mask>*</mask>
       <mask>t*.py</mask>
       <mask>test*.py</mask>
-      <mask>*.py</mask>
-      <mask>*.p</mask>
       <mask>*.s</mask>
-      <mask>*.</mask>
-      <mask>*.j</mask>
-      <mask>*.jso</mask>
       <mask>*.json</mask>
+      <mask>*.jso</mask>
+      <mask>*.js</mask>
+      <mask>*.j</mask>
+      <mask>*.</mask>
+      <mask>*.p</mask>
+      <mask>*.py</mask>
     </recentFileMasks>
   </component>
 </application>
