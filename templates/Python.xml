@@ -27,7 +27,14 @@
       <option name="Python_Class" value="false" />
     </context>
   </template>
-  <template name="mysql_execute" value="def $function_name$(host: str = 'db'):&#10;    connection = mysql_functions.connect_to_db(host=host)&#10;    try:&#10;        dll = &quot;$dll$&quot;&#10;    &#10;        with connection.cursor() as cursor:&#10;            cursor.execute(dll)&#10;        connection.commit()&#10;    finally:&#10;        connection.close()" description="PyMySQL execute" toReformat="false" toShortenFQNames="true">
+  <template name="mysql_execute" value="def $function_name$(host: str = 'db'):&#10;    connection = mysql_functions.connect_to_db(host=host)&#10;    try:&#10;        dll = &quot;$dll$ = %s&quot;&#10;    &#10;        with connection.cursor() as cursor:&#10;            cursor.execute(dll, param)&#10;        connection.commit()&#10;    finally:&#10;        connection.close()&#10;    " description="PyMySQL execute" toReformat="false" toShortenFQNames="true">
+    <variable name="function_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="dll" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="mysql_select" value="def $function_name$(host: str = 'db'):&#10;    connection = mysql_functions.connect_to_db(host=host)&#10;    try:&#10;        dll = &quot;$dll$ = %s&quot;&#10;        &#10;        with connection.cursor() as cursor:&#10;            cursor.execute(dll, param)&#10;        result = cursor.fetchone()&#10;    finally:&#10;        connection.close()&#10;&#10;    return result" description="PyMySQL select" toReformat="false" toShortenFQNames="true">
     <variable name="function_name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="dll" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
