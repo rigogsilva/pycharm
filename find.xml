@@ -7,9 +7,8 @@
     <option name="CASE_SENSITIVE_SEARCH" value="true" />
     <option name="REGULAR_EXPRESSIONS" value="true" />
     <option name="SEARCH_SCOPE" value="Current File" />
-    <option name="FILE_MASK" value="*.sql" />
+    <option name="FILE_MASK" value="*.html" />
     <recentFileMasks>
-      <mask>*.css</mask>
       <mask>*.mxml</mask>
       <mask>s*.py</mask>
       <mask>S*.py</mask>
@@ -39,6 +38,7 @@
       <mask>*.p</mask>
       <mask>*.py</mask>
       <mask>*.sql</mask>
+      <mask>*.html</mask>
     </recentFileMasks>
   </component>
 </application>
