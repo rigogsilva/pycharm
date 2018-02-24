@@ -13,32 +13,53 @@
       <option name="Python_Class" value="false" />
     </context>
   </template>
-  <template name="gluecreatetables" value="import datetime&#10;from datetime import timedelta&#10;from emr_manager import configs&#10;&#10;import boto3&#10;&#10;from emr_manager import creator&#10;from emr_manager import destructor&#10;from emr_manager import glue&#10;&#10;start_time = datetime.datetime.utcnow()&#10;print('UTC End time: ', start_time)&#10;partitions_num = 1&#10;&#10;session = boto3.Session(profile_name='$aws_profile$')&#10;client = session.client('glue')&#10;&#10;glue_tables = glue.get_table_names(client, 'mercury')&#10;&#10;destructor.run('mercury', glue_tables, profile_name='$aws_profile$')&#10;creator.run(partitions_num, '$aws_profile$')&#10;&#10;end_time = datetime.datetime.utcnow()&#10;print('UTC End time: ', end_time)&#10;print('Total Time (secconds):', (end_time - start_time).total_seconds(), &#10;      'Total Time (minutes):', (end_time - start_time).total_seconds()/60)&#10;&#10;print('Last Partition: ', datetime.datetime.utcnow() + timedelta(&#10;    hours=partitions_num - 1))" description="Deletes and creates all glue tables" toReformat="false" toShortenFQNames="true">
+  <template name="gluecreatetables" value="import datetime&#10;from datetime import timedelta&#10;&#10;import boto3&#10;&#10;from emr_manager import creator&#10;from emr_manager import destructor&#10;from emr_manager import glue&#10;from emr_manager import schemas&#10;&#10;start_time = datetime.datetime.utcnow()&#10;print('UTC End time: ', start_time)&#10;partitions_num = 1&#10;destruct = False&#10;&#10;session = boto3.Session(profile_name='$aws_profile$')&#10;client = session.client('glue')&#10;&#10;dynamo_db_tables = schemas.existing_table_names()&#10;&#10;unique_databases: set = {&#10;    dictionary['database']&#10;    for dictionary in dynamo_db_tables&#10;}&#10;&#10;databases = list(unique_databases)&#10;&#10;if destruct:&#10;    glue_tables = glue.get_table_names(client, databases)&#10;    destructor.run(databases, glue_tables, profile_name='$aws_profile$')&#10;&#10;creator.run(partitions_num, '$aws_profile$')&#10;&#10;end_time = datetime.datetime.utcnow()&#10;print('UTC End time: ', end_time)&#10;print('Total Time (secconds):', (end_time - start_time).total_seconds(),&#10;      'Total Time (minutes):', (end_time - start_time).total_seconds()/60)&#10;&#10;print('Last Partition: ', datetime.datetime.utcnow() + timedelta(&#10;    hours=partitions_num - 1))&#10;" description="Deletes and creates all glue tables" toReformat="false" toShortenFQNames="true">
     <variable name="aws_profile" expression="" defaultValue="dedevel" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
       <option name="Python_Class" value="false" />
     </context>
   </template>
-  <template name="glueupdatepartitions" value="import datetime&#10;&#10;import boto3&#10;&#10;from emr_manager import creator&#10;from emr_manager import glue&#10;from emr_manager import schemas&#10;from emr_manager import updater&#10;&#10;start_time = datetime.datetime.utcnow()&#10;print('UTC End time: ', start_time)&#10;&#10;session = boto3.Session(profile_name='dedevel')&#10;client = session.client('glue')&#10;&#10;glue_tables = glue.get_tables(client, 'mercury')&#10;&#10;table_mapping = creator.get_lowercase_uppercase_tables(&#10;    schemas.existing_table_names()&#10;)&#10;&#10;table_info = []&#10;&#10;for table_name in glue_tables:&#10;    table_values = creator.get_table_values((table_mapping.get(table_name)&#10;                                            or table_name), session)&#10;    last_partition = glue.get_last_partition(client, 'mercury', table_values, 0)&#10;&#10;    table_info.append(&#10;            {&#10;                'table_name': table_name,&#10;                'last_partition': last_partition,&#10;                'new_last_partition': ''&#10;             }&#10;    )&#10;&#10;updater.run(future_hours=$future_hours$, aws_profile='dedevel')&#10;&#10;for table_name in glue_tables:&#10;    table_values = creator.get_table_values((table_mapping.get(table_name)&#10;                                            or table_name), session)&#10;    new_last_partition = glue.get_last_partition(&#10;        client, 'mercury', table_values, 0&#10;    )&#10;&#10;    for dict in table_info:&#10;        if dict.get('table_name') == table_name:&#10;            dict.update(&#10;                (k, new_last_partition)&#10;                for k, v in dict.items()&#10;                if k == 'new_last_partition'&#10;            )&#10;&#10;&#10;end_time = datetime.datetime.utcnow()&#10;&#10;print('UTC End time: ', end_time)&#10;print('Total Time (secconds):', (end_time - start_time).total_seconds(),&#10;      'Total Time (minutes):', (end_time - start_time).total_seconds()/60)&#10;&#10;print('### Table Partition Information ###')&#10;for table in table_info:&#10;    print(table)&#10;" description="Updates glue existing tables partitions" toReformat="false" toShortenFQNames="true">
+  <template name="glueupdatepartitions" value="import datetime&#10;&#10;import boto3&#10;&#10;from emr_manager import creator&#10;from emr_manager import glue&#10;from emr_manager import schemas&#10;from emr_manager import updater&#10;&#10;start_time = datetime.datetime.utcnow()&#10;print('UTC End time: ', start_time)&#10;&#10;session = boto3.Session(profile_name='$profile$')&#10;client = session.client('glue')&#10;&#10;dynamo_db_tables = schemas.existing_table_names()&#10;&#10;unique_databases: set = {&#10;    dictionary['database']&#10;    for dictionary in dynamo_db_tables&#10;}&#10;&#10;databases = list(unique_databases)&#10;&#10;glue_tables = glue.get_table_names(client, databases)&#10;&#10;table_info = []&#10;for table_name in glue_tables:&#10;    database = table_name['database']&#10;&#10;    table_values = creator.get_table_values(&#10;        f'{database}_{table_name.get(&quot;table_name&quot;)}', session&#10;    )&#10;    last_partition = glue.get_last_partition(client, database, table_values, 0)&#10;&#10;    table_info.append(&#10;            {&#10;                'table_name': f'{database}.{table_name.get(&quot;table_name&quot;)}',&#10;                'last_partition': last_partition,&#10;                'new_last_partition': ''&#10;             }&#10;    )&#10;&#10;updater.run(future_hours=$future_hours$, aws_profile='$profile$')&#10;&#10;for table_name in glue_tables:&#10;    database = table_name['database']&#10;    table_values = creator.get_table_values(&#10;        f'{database}_{table_name.get(&quot;table_name&quot;)}', session&#10;    )&#10;    new_last_partition = glue.get_last_partition(&#10;        client, database, table_values, 0&#10;    )&#10;&#10;    for dict in table_info:&#10;        if dict.get('table_name') == table_name:&#10;            dict.update(&#10;                (k, new_last_partition)&#10;                for k, v in dict.items()&#10;                if k == 'new_last_partition'&#10;            )&#10;&#10;&#10;end_time = datetime.datetime.utcnow()&#10;&#10;print('UTC End time: ', end_time)&#10;print('Total Time (secconds):', (end_time - start_time).total_seconds(), '\n'&#10;      'Total Time (minutes):', (end_time - start_time).total_seconds()/60)&#10;&#10;print('### Table Partition Information ###')&#10;for table in table_info:&#10;    print(table)&#10;" description="Updates glue existing tables partitions" toReformat="false" toShortenFQNames="true">
     <variable name="future_hours" expression="" defaultValue="24" alwaysStopAt="true" />
+    <variable name="profile" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
       <option name="Python_Class" value="false" />
     </context>
   </template>
-  <template name="mysql_execute" value="def $function_name$(host: str = 'db'):&#10;    connection = mysql_functions.connect_to_db(host=host)&#10;    try:&#10;        dll = &quot;$dll$ = %s&quot;&#10;    &#10;        with connection.cursor() as cursor:&#10;            cursor.execute(dll, param)&#10;        connection.commit()&#10;    finally:&#10;        connection.close()&#10;    " description="PyMySQL execute" toReformat="false" toShortenFQNames="true">
-    <variable name="function_name" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="dll" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="Python" value="true" />
-    </context>
+  <template name="compl" value="[&#10;    $VAR_EXPR$ &#10;    for $VAR$ in $ITERABLE$&#10;]" description="List comprehension" toReformat="false" toShortenFQNames="true">
+    <variable name="ITERABLE" expression="pyIterableVariable()" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="collectionElementName(ITERABLE)" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR_EXPR" expression="" defaultValue="VAR" alwaysStopAt="true" />
+    <context />
   </template>
-  <template name="mysql_select" value="def $function_name$(host: str = 'db'):&#10;    connection = mysql_functions.connect_to_db(host=host)&#10;    try:&#10;        dll = &quot;$dll$ = %s&quot;&#10;        &#10;        with connection.cursor() as cursor:&#10;            cursor.execute(dll, param)&#10;        result = cursor.fetchone()&#10;    finally:&#10;        connection.close()&#10;&#10;    return result" description="PyMySQL select" toReformat="false" toShortenFQNames="true">
-    <variable name="function_name" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="dll" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="Python" value="true" />
-    </context>
+  <template name="compli" value="[&#10;    $VAR_EXPR$ &#10;    for $VAR$ in $ITERABLE$ &#10;    if $VAR_EXPR_IF$&#10;]" description="List comprehension with 'if'" toReformat="false" toShortenFQNames="true">
+    <variable name="ITERABLE" expression="pyIterableVariable()" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="collectionElementName(ITERABLE)" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR_EXPR" expression="" defaultValue="VAR" alwaysStopAt="true" />
+    <variable name="VAR_EXPR_IF" expression="" defaultValue="VAR" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="comps" value="{&#10;    $VAR_EXPR$ &#10;    for $VAR$ in $ITERABLE$&#10;}" description="Set comprehension" toReformat="false" toShortenFQNames="true">
+    <variable name="ITERABLE" expression="pyIterableVariable()" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="collectionElementName(ITERABLE)" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR_EXPR" expression="" defaultValue="VAR" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="compd" value="{&#10;    $KEY_EXPR$: $VAL_EXPR$ &#10;    for $VAR$ in $ITERABLE$&#10;}" description="Dict comprehension" toReformat="false" toShortenFQNames="true">
+    <variable name="ITERABLE" expression="pyIterableVariable()" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="collectionElementName(ITERABLE)" defaultValue="" alwaysStopAt="true" />
+    <variable name="KEY_EXPR" expression="" defaultValue="VAR" alwaysStopAt="true" />
+    <variable name="VAL_EXPR" expression="" defaultValue="VAR" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="compdi" value="{&#10;    $KEY_EXPR$: $VAL_EXPR$ &#10;    for $VAR$ in $ITERABLE$ &#10;    if $VAR_EXPR_IF$&#10;}" description="Dict comprehension with 'if'" toReformat="false" toShortenFQNames="true">
+    <variable name="ITERABLE" expression="pyIterableVariable()" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="collectionElementName(ITERABLE)" defaultValue="" alwaysStopAt="true" />
+    <variable name="KEY_EXPR" expression="" defaultValue="VAR" alwaysStopAt="true" />
+    <variable name="VAL_EXPR" expression="" defaultValue="VAR" alwaysStopAt="true" />
+    <variable name="VAR_EXPR_IF" expression="" defaultValue="VAR" alwaysStopAt="true" />
+    <context />
   </template>
 </templateSet>

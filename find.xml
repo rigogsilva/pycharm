@@ -1,15 +1,14 @@
 <application>
   <component name="FindSettings">
     <option name="caseSensitive" value="true" />
-    <option name="customScope" value="Current File" />
-    <option name="defaultScopeName" value="Current File" />
-    <option name="regularExpressions" value="true" />
+    <option name="customScope" value="All Places" />
+    <option name="defaultScopeName" value="All Places" />
+    <option name="localCaseSensitive" value="true" />
     <option name="CASE_SENSITIVE_SEARCH" value="true" />
-    <option name="REGULAR_EXPRESSIONS" value="true" />
-    <option name="SEARCH_SCOPE" value="Current File" />
-    <option name="FILE_MASK" value="*.html" />
+    <option name="LOCAL_CASE_SENSITIVE_SEARCH" value="true" />
+    <option name="SEARCH_SCOPE" value="All Places" />
+    <option name="FILE_MASK" value="*.py" />
     <recentFileMasks>
-      <mask>*.mxml</mask>
       <mask>s*.py</mask>
       <mask>S*.py</mask>
       <mask>S0*.py</mask>
@@ -27,18 +26,19 @@
       <mask>*..</mask>
       <mask>*.n</mask>
       <mask>*.jp</mask>
+      <mask>*.sql</mask>
+      <mask>*.sq</mask>
+      <mask>t*.py</mask>
+      <mask>test*.py</mask>
+      <mask>*.s</mask>
       <mask>*.json</mask>
       <mask>*.jso</mask>
       <mask>*.js</mask>
       <mask>*.j</mask>
       <mask>*</mask>
-      <mask>*.s</mask>
-      <mask>*.sq</mask>
       <mask>*.</mask>
       <mask>*.p</mask>
       <mask>*.py</mask>
-      <mask>*.sql</mask>
-      <mask>*.html</mask>
     </recentFileMasks>
   </component>
 </application>
