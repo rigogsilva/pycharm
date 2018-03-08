@@ -1,5 +1,11 @@
 <application>
   <component name="DatabaseSettings" version="3">
+    <option name="execute-inside-option" value="5" />
+    <exec-options>
+      <exec-option exec-inside="5" />
+      <exec-option />
+      <exec-option />
+    </exec-options>
     <text-mode>
       <parameter-patterns>
         <parameter-pattern value="#(\w+)#" scope="XML" predefined="#name#" />
