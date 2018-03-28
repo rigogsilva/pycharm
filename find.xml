@@ -9,7 +9,7 @@
     <option name="LOCAL_CASE_SENSITIVE_SEARCH" value="true" />
     <option name="REGULAR_EXPRESSIONS" value="true" />
     <option name="SEARCH_SCOPE" value="Current File" />
-    <option name="FILE_MASK" value="*.json" />
+    <option name="FILE_MASK" value="*" />
     <recentFileMasks>
       <mask>s*.py</mask>
       <mask>S*.py</mask>
@@ -39,8 +39,8 @@
       <mask>*.p</mask>
       <mask>*.</mask>
       <mask>*.py</mask>
-      <mask>*</mask>
       <mask>*.json</mask>
+      <mask>*</mask>
     </recentFileMasks>
   </component>
 </application>
