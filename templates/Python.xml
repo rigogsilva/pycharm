@@ -72,4 +72,10 @@
       <option name="Python_Class" value="false" />
     </context>
   </template>
+  <template name="glueDropTableByDB" value="from emr_manager import destructor&#10;from emr_manager.glue import tables&#10;import boto3&#10;&#10;database = input('Database name: ')&#10;&#10;session = boto3.Session(profile_name='$profile$')&#10;client = session.client('glue')&#10;&#10;glue_tables = tables.get_table_names(client, [database])&#10;&#10;table_names = [&#10;    tables['table_name']&#10;    for tables in glue_tables&#10;]&#10;&#10;destructor.run(database=database,&#10;               tables=table_names,&#10;               aws_profile='$profile$')&#10;" description="Drops tables in database" toReformat="false" toShortenFQNames="true">
+    <variable name="profile" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
 </templateSet>
