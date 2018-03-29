@@ -9,9 +9,8 @@
     <option name="LOCAL_CASE_SENSITIVE_SEARCH" value="true" />
     <option name="REGULAR_EXPRESSIONS" value="true" />
     <option name="SEARCH_SCOPE" value="Current File" />
-    <option name="FILE_MASK" value="*" />
+    <option name="FILE_MASK" value="test_*" />
     <recentFileMasks>
-      <mask>s*.py</mask>
       <mask>S*.py</mask>
       <mask>S0*.py</mask>
       <mask>S05*.py</mask>
@@ -41,6 +40,7 @@
       <mask>*.py</mask>
       <mask>*.json</mask>
       <mask>*</mask>
+      <mask>test_*</mask>
     </recentFileMasks>
   </component>
 </application>
