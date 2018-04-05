@@ -63,9 +63,8 @@
     <variable name="VAR_EXPR_IF" expression="" defaultValue="VAR" alwaysStopAt="true" />
     <context />
   </template>
-  <template name="glue_get_last_partition" value="import boto3&#10;&#10;from emr_manager import creator&#10;from emr_manager import glue&#10;from emr_manager import schemas&#10;&#10;session =  boto3.Session(profile_name='$profile$')&#10;client = session.client('glue')&#10;&#10;database = '$database$' # e.g.: api&#10;table_name = '$table$' # e.g.: hourlyActiveSessions&#10;&#10;definition_path = schemas.get_local_definitions_path()&#10;&#10;table_values = creator.get_table_values(f'{database}_{table_name}', definition_path, session)&#10;&#10;las_partition = glue.get_last_partition(client, database, table_values)&#10;print(las_partition)&#10;&#10;" description="Gets the last partition for a table" toReformat="false" toShortenFQNames="true">
+  <template name="glue_get_last_partition" value="import boto3&#10;&#10;from emr_manager import creator&#10;from emr_manager import glue&#10;from emr_manager import schemas&#10;&#10;session =  boto3.Session(profile_name='$profile$')&#10;client = session.client('glue')&#10;&#10;table = '$table$' # e.g.: api.hourlyActiveSessions&#10;&#10;database = table.split('.')[0]&#10;table_name = table.split('.')[-1]&#10;&#10;definition_path = schemas.get_local_definitions_path()&#10;&#10;table_values = creator.get_table_values(f'{database}_{table_name}', definition_path, session)&#10;&#10;las_partition = glue.get_last_partition(client, f'{database}', table_values)&#10;print(las_partition)&#10;&#10;&#10;&#10;" description="Gets the last partition for a table" toReformat="false" toShortenFQNames="true">
     <variable name="profile" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="database" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="table" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
