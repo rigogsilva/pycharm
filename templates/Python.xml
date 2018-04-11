@@ -83,4 +83,9 @@
       <option name="Python" value="true" />
     </context>
   </template>
+  <template name="testfileNoClass" value="from unittest.mock import MagicMock&#10;from unittest.mock import patch&#10;&#10;import pytest&#10;&#10;&#10;@patch('example.function')&#10;def test_return_value(function: MagicMock):&#10;    &quot;&quot;&quot;Tests return value with called once&quot;&quot;&quot;&#10;    &#10;    assert result == mock_post.return_value&#10;    assert mock_get.call_count == 2&#10;    function.assert_called_once()&#10;&#10;&#10;@patch('example.function')&#10;def test_with_raise(function: MagicMock):&#10;    &quot;&quot;&quot;Tests return value with called once&quot;&quot;&quot;&#10;&#10;    with pytest.raises(ValueError):&#10;        run_function()&#10;" description="Test file examples with no class" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
 </templateSet>
