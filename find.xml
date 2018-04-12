@@ -10,37 +10,16 @@
     <option name="REGULAR_EXPRESSIONS" value="true" />
     <option name="SEARCH_SCOPE" value="Current File" />
     <option name="FILE_MASK" value="*.json" />
-    <recentFileMasks>
-      <mask>S*.py</mask>
-      <mask>S0*.py</mask>
-      <mask>S05*.py</mask>
-      <mask>S05.py</mask>
-      <mask>*.py;</mask>
-      <mask>*.py;</mask>
-      <mask>*.py; *</mask>
-      <mask>*.py; *.</mask>
-      <mask>*.py; *.s</mask>
-      <mask>*.py; *.sq</mask>
-      <mask>*.py; *.sql</mask>
-      <mask>*.so</mask>
-      <mask>*.jo</mask>
-      <mask>*..</mask>
-      <mask>*.n</mask>
-      <mask>*.jp</mask>
-      <mask>*.sql</mask>
-      <mask>*.sq</mask>
-      <mask>t*.py</mask>
-      <mask>test*.py</mask>
-      <mask>*.s</mask>
-      <mask>*.j</mask>
-      <mask>*.js</mask>
-      <mask>*.jso</mask>
-      <mask>*.p</mask>
-      <mask>*.</mask>
-      <mask>test_*</mask>
-      <mask>*</mask>
-      <mask>*.py</mask>
-      <mask>*.json</mask>
-    </recentFileMasks>
+    <mask>*.properties</mask>
+    <mask>*.html</mask>
+    <mask>*.jsp</mask>
+    <mask>*.xml</mask>
+    <mask>*.java</mask>
+    <mask>*.js</mask>
+    <mask>*.as</mask>
+    <mask>*.css</mask>
+    <mask>*.mxml</mask>
+    <mask>*.py</mask>
+    <mask>*.json</mask>
   </component>
 </application>
