@@ -88,7 +88,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="awsClient" value="session = boto3.Session(profile_name=aws_profile)&#10;region = session.region_name or 'us-east-1'&#10;client = session.client('$client$', region_name=region)" description="Code snippet for client" toReformat="false" toShortenFQNames="true">
+  <template name="sessionClient" value="session = boto3.Session(profile_name=aws_profile)&#10;region = session.region_name or 'us-east-1'&#10;client = session.client('$client$', region_name=region)" description="Code snippet for client" toReformat="false" toShortenFQNames="true">
     <variable name="client" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
