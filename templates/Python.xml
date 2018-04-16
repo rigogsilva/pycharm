@@ -94,4 +94,9 @@
       <option name="Python" value="true" />
     </context>
   </template>
+  <template name="backoff" value="import time&#10;&#10;def backoff_function(param: str, attempt_limit: int = 10):&#10;    &quot;&quot;&quot;&#10;    Example of backoff function&#10;&#10;    :param param:&#10;        some param&#10;    :param attempt_limit:&#10;        The number of attempts to execute query if a non user error occurs.&#10;    :return&#10;        The final presto_query returned by the exexute_attempt() function.&#10;    &quot;&quot;&quot;&#10;&#10;    attempt = 0&#10;    while attempt &lt; attempt_limit:&#10;        try:&#10;            raise ValueError(param)&#10;        except Exception as error:&#10;            time.sleep(min(128, 2 ** attempt))&#10;            attempt += 1&#10;            print('Sleeping ', 2 ** attempt, 'seconds')&#10;&#10;&#10;backoff_function('Failed')" description="Exponential Backoff snippet" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
 </templateSet>
