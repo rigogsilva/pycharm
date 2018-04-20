@@ -9,7 +9,7 @@
     <option name="LOCAL_CASE_SENSITIVE_SEARCH" value="true" />
     <option name="REGULAR_EXPRESSIONS" value="true" />
     <option name="SEARCH_SCOPE" value="Current File" />
-    <option name="FILE_MASK" value="*.json" />
+    <option name="FILE_MASK" value="*.py" />
     <mask>*.properties</mask>
     <mask>*.html</mask>
     <mask>*.jsp</mask>
@@ -20,8 +20,8 @@
     <mask>*.css</mask>
     <mask>*.mxml</mask>
     <mask>*.sql</mask>
-    <mask>*.py</mask>
     <mask>*</mask>
     <mask>*.json</mask>
+    <mask>*.py</mask>
   </component>
 </application>
