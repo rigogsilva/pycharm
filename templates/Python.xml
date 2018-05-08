@@ -104,4 +104,9 @@
       <option name="Python" value="true" />
     </context>
   </template>
+  <template name="timeit_code" value="import timeit&#10;&#10;setup_run_once = &quot;&quot;&quot;&#10;import pandas as pd&#10;&#10;left_df = pd.DataFrame(&#10;[&#10;    {'accountId': 1, 'userId': 10},&#10;    {'accountId': 2, 'userId': 11},&#10;]&#10;)&#10;&quot;&quot;&quot;&#10;&#10;statement_to_run = 'len(left_df)'&#10;&#10;time = timeit.timeit(stmt=statement_to_run, setup=setup_run_once, number=10000)&#10;print('\n', time)&#10;&#10;statement = 'len(left_df.index)'&#10;time_index = timeit.timeit(stmt=statement_to_run, setup=setup_run_once, number=10000)&#10;print('\n', time_index)" description="Way to test how long your code takes" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
 </templateSet>
