@@ -109,4 +109,9 @@
       <option name="Python" value="true" />
     </context>
   </template>
+  <template name="dataframeExample" value="import pandas as pd&#10;&#10;df = pd.DataFrame(&#10;    [&#10;        {'columnA': 1, 'storedAt': '2018-05-01', 'attendanceHealth': 'hey'},&#10;        {'columnA': 2, 'storedAt': '2018-05-01', 'attendanceHealth': 'hey'},&#10;        {'columnA': 2, 'storedAt': '2018-05-01', 'attendanceHealth': 'hey'},&#10;        {'columnA': 2, 'storedAt': '2018-05-02', 'attendanceHealth': 'hey'},&#10;        {'columnA': 2, 'storedAt': '2018-05-02', 'attendanceHealth': 'hey'},&#10;        {'columnA': 2, 'storedAt': '2018-05-01', 'attendanceHealth': 'hey'},&#10;        {'columnA': 2, 'storedAt': '2018-05-01', 'attendanceHealth': 'hey'},&#10;        {'columnA': 2, 'storedAt': '2018-05-01', 'attendanceHealth': 'hey'}&#10;    ]&#10;)&#10;&#10;account_health = df&#10;&#10;account_health_aggregated = (&#10;    account_health&#10;    .round(0)&#10;    .groupby(['storedAt', 'attendanceHealth'])&#10;    .count()&#10;)&#10;&#10;print(account_health_aggregated)" description="Snippet of a fake dataframe." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
 </templateSet>
