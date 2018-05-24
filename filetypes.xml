@@ -19,6 +19,7 @@
       <mapping ext="csv" type="PLAIN_TEXT" />
       <mapping ext="mmd" type="PLAIN_TEXT" />
       <mapping ext="cauldron" type="PLAIN_TEXT" />
+      <mapping ext="gz" type="PLAIN_TEXT" />
       <mapping pattern="first_module" type="Python" />
       <mapping pattern=".gitignore_global" type="Git file" />
     </extensionMap>
