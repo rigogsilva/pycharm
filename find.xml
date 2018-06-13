@@ -23,6 +23,7 @@
     <mask>pipper.json</mask>
     <mask>*.sql</mask>
     <mask>*.py</mask>
+    <mask>*utils.py</mask>
     <mask>*</mask>
   </component>
 </application>
