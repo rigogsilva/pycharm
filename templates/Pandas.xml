@@ -1,0 +1,13 @@
+<templateSet group="Pandas">
+  <template name="PdViewCSVInBrowser" value="import pandas as pd&#10;import os&#10;import webbrowser&#10;&#10;&#10;data_table = pd.read_csv('ml_house_data_set.csv')&#10;&#10;html = data_table[0:100].to_html()&#10;&#10;with open('data.html', 'w') as f:&#10;    f.write(html)&#10;&#10;full_filename = os.path.abspath('data.html')&#10;webbrowser.open(f'file://{full_filename}')&#10;" description="Converts data to html and opens it in a browser" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+    </context>
+  </template>
+  <template name="PdCreateDummyDataFrame" value="df = DataFrame(&#10;    np.random.rand(36). reshape(6, 6), index=[&#10;        'row 1', 'row 2', 'row 3', 'row 4', 'row 5', 'row 6'&#10;    ],&#10;    columns=['column 1', 'column 2', 'column 3', 'column 4', 'column 5', 'column 6']&#10;)" description="Creates a fake pandas dataframe" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+</templateSet>
