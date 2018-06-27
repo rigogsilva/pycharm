@@ -24,6 +24,7 @@
     <mask>*utils.py</mask>
     <mask>*.json</mask>
     <mask>*.py</mask>
+    <mask>*http*</mask>
     <mask>*</mask>
   </component>
 </application>
