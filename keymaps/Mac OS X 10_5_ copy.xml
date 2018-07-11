@@ -3,4 +3,8 @@
     <keyboard-shortcut first-keystroke="ctrl alt o" />
     <keyboard-shortcut first-keystroke="meta i" />
   </action>
+  <action id="SmartSearchAction">
+    <keyboard-shortcut first-keystroke="shift meta d" />
+    <keyboard-shortcut first-keystroke="shift ctrl n" />
+  </action>
 </keymap>
