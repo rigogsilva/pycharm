@@ -22,11 +22,11 @@
     <mask>*.sql</mask>
     <mask>*utils.py</mask>
     <mask>*.json</mask>
-    <mask>*.py</mask>
     <mask>*http*</mask>
     <mask>*.js</mask>
     <mask>*.vue</mask>
     <mask>*.tf</mask>
+    <mask>*.py</mask>
     <mask>*</mask>
   </component>
 </application>
