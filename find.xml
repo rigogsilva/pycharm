@@ -9,7 +9,7 @@
     <option name="LOCAL_CASE_SENSITIVE_SEARCH" value="true" />
     <option name="REGULAR_EXPRESSIONS" value="true" />
     <option name="SEARCH_SCOPE" value="Current File" />
-    <option name="FILE_MASK" value="*" />
+    <option name="FILE_MASK" value="*.py" />
     <mask>*.properties</mask>
     <mask>*.html</mask>
     <mask>*.jsp</mask>
@@ -25,9 +25,9 @@
     <mask>*http*</mask>
     <mask>*.vue</mask>
     <mask>*.tf</mask>
-    <mask>*.py</mask>
     <mask>*.js</mask>
     <mask>*.yml</mask>
     <mask>*</mask>
+    <mask>*.py</mask>
   </component>
 </application>
