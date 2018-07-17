@@ -26,8 +26,8 @@
     <mask>*.vue</mask>
     <mask>*.tf</mask>
     <mask>*.js</mask>
-    <mask>*.py</mask>
     <mask>*.yml</mask>
+    <mask>*.py</mask>
     <mask>*</mask>
   </component>
 </application>
