@@ -29,6 +29,7 @@
     <mask>*.vue</mask>
     <mask>requirements.txt</mask>
     <mask>*.py</mask>
+    <mask>*.sh</mask>
     <mask>*</mask>
   </component>
 </application>
