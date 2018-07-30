@@ -9,7 +9,7 @@
     <option name="LOCAL_CASE_SENSITIVE_SEARCH" value="true" />
     <option name="REGULAR_EXPRESSIONS" value="true" />
     <option name="SEARCH_SCOPE" value="All Places" />
-    <option name="FILE_MASK" value="*.vue" />
+    <option name="FILE_MASK" value="*" />
     <mask>*.properties</mask>
     <mask>*.html</mask>
     <mask>*.jsp</mask>
@@ -29,7 +29,7 @@
     <mask>requirements.txt</mask>
     <mask>*.py</mask>
     <mask>*.sh</mask>
-    <mask>*</mask>
     <mask>*.vue</mask>
+    <mask>*</mask>
   </component>
 </application>
