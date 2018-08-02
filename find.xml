@@ -9,7 +9,7 @@
     <option name="LOCAL_CASE_SENSITIVE_SEARCH" value="true" />
     <option name="REGULAR_EXPRESSIONS" value="true" />
     <option name="SEARCH_SCOPE" value="All Places" />
-    <option name="FILE_MASK" value="configs.py" />
+    <option name="FILE_MASK" value="*.sql" />
     <mask>*.properties</mask>
     <mask>*.html</mask>
     <mask>*.jsp</mask>
@@ -19,7 +19,6 @@
     <mask>*.css</mask>
     <mask>*.mxml</mask>
     <mask>pipper.json</mask>
-    <mask>*.sql</mask>
     <mask>*utils.py</mask>
     <mask>*.json</mask>
     <mask>*http*</mask>
@@ -32,5 +31,6 @@
     <mask>*.vue</mask>
     <mask>*</mask>
     <mask>configs.py</mask>
+    <mask>*.sql</mask>
   </component>
 </application>
