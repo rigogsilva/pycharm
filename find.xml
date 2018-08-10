@@ -9,7 +9,7 @@
     <option name="LOCAL_CASE_SENSITIVE_SEARCH" value="true" />
     <option name="REGULAR_EXPRESSIONS" value="true" />
     <option name="SEARCH_SCOPE" value="Current File" />
-    <option name="FILE_MASK" value="*.sql" />
+    <option name="FILE_MASK" value="*.py" />
     <mask>*.properties</mask>
     <mask>*.html</mask>
     <mask>*.jsp</mask>
@@ -26,11 +26,11 @@
     <mask>*.js</mask>
     <mask>*.yml</mask>
     <mask>requirements.txt</mask>
-    <mask>*.py</mask>
     <mask>*.sh</mask>
     <mask>*.vue</mask>
     <mask>configs.py</mask>
     <mask>*</mask>
     <mask>*.sql</mask>
+    <mask>*.py</mask>
   </component>
 </application>
