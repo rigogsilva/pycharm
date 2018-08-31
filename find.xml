@@ -1,15 +1,15 @@
 <application>
   <component name="FindSettings">
     <option name="caseSensitive" value="true" />
-    <option name="customScope" value="All Places" />
-    <option name="defaultScopeName" value="All Places" />
+    <option name="customScope" value="Current File" />
+    <option name="defaultScopeName" value="Current File" />
     <option name="localCaseSensitive" value="true" />
     <option name="regularExpressions" value="true" />
     <option name="CASE_SENSITIVE_SEARCH" value="true" />
     <option name="LOCAL_CASE_SENSITIVE_SEARCH" value="true" />
     <option name="REGULAR_EXPRESSIONS" value="true" />
-    <option name="SEARCH_SCOPE" value="All Places" />
-    <option name="FILE_MASK" value="*" />
+    <option name="SEARCH_SCOPE" value="Current File" />
+    <option name="FILE_MASK" value="*.json" />
     <mask>*.properties</mask>
     <mask>*.html</mask>
     <mask>*.jsp</mask>
@@ -20,7 +20,6 @@
     <mask>*.mxml</mask>
     <mask>pipper.json</mask>
     <mask>*utils.py</mask>
-    <mask>*.json</mask>
     <mask>*http*</mask>
     <mask>*.js</mask>
     <mask>*.yml</mask>
@@ -35,5 +34,6 @@
     <mask>*.tf*</mask>
     <mask>*.tf</mask>
     <mask>*</mask>
+    <mask>*.json</mask>
   </component>
 </application>
