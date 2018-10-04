@@ -9,7 +9,7 @@
     <option name="LOCAL_CASE_SENSITIVE_SEARCH" value="true" />
     <option name="REGULAR_EXPRESSIONS" value="true" />
     <option name="SEARCH_SCOPE" value="All Places" />
-    <option name="FILE_MASK" value="*" />
+    <option name="FILE_MASK" value="*.py" />
     <mask>*.properties</mask>
     <mask>*.html</mask>
     <mask>*.jsp</mask>
@@ -34,7 +34,7 @@
     <mask>*.tf</mask>
     <mask>*.json</mask>
     <mask>*test_*</mask>
-    <mask>*.py</mask>
     <mask>*</mask>
+    <mask>*.py</mask>
   </component>
 </application>
