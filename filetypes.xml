@@ -9,6 +9,7 @@
       <mapping pattern="requirements" type="PLAIN_TEXT" />
       <mapping pattern="p" type="PLAIN_TEXT" />
       <mapping pattern="quotes_titles" type="PLAIN_TEXT" />
+      <mapping ext="tpl" type="PLAIN_TEXT" />
       <mapping ext="mmd" type="PLAIN_TEXT" />
       <mapping ext="cauldron" type="PLAIN_TEXT" />
       <mapping ext="gz" type="PLAIN_TEXT" />
