@@ -186,6 +186,10 @@
           <option name="url" value="git@gitlab.wheniwork.com:data/pipper/customer-reports.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="git@gitlab.wheniwork.com:data/applications/notebook-viewer-web.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="$USER_HOME$/Documents/Projects" />
