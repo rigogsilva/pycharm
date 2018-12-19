@@ -9,26 +9,6 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
-      <webServer id="20190100-ad4b-431e-abed-1eb03d88aa4e" name="ec2-user@ec2-34-226-249-44.compute-1.amazonaws.com:22" url="http:///">
-        <fileTransfer host="ec2-34-226-249-44.compute-1.amazonaws.com" port="22" privateKey="$USER_HOME$/Desktop/nexus.pem" accessType="SFTP" keyPair="true">
-          <option name="port" value="22" />
-        </fileTransfer>
-      </webServer>
-      <webServer id="20190100-ad4b-431e-abed-1eb03d88aa4e" name="ec2-user@ec2-34-226-249-44.compute-1.amazonaws.com:22 (1)" url="http:///">
-        <fileTransfer host="ec2-34-226-249-44.compute-1.amazonaws.com" port="22" privateKey="$USER_HOME$/Desktop/nexus.pem" accessType="SFTP" keyPair="true">
-          <option name="port" value="22" />
-        </fileTransfer>
-      </webServer>
-      <webServer id="92a6ecc8-8f42-4869-bc57-29be5e9004bd" name="ec2-user@ec2-34-226-249-44.compute-1.amazonaws.com:22 (2)" url="http:///">
-        <fileTransfer host="ec2-34-226-249-44.compute-1.amazonaws.com" port="22" privateKey="$USER_HOME$/Desktop/nexus.pem" accessType="SFTP" keyPair="true">
-          <option name="port" value="22" />
-        </fileTransfer>
-      </webServer>
-      <webServer id="92a6ecc8-8f42-4869-bc57-29be5e9004bd" name="ec2-user@ec2-34-226-249-44.compute-1.amazonaws.com:22 (3)" url="http:///">
-        <fileTransfer host="ec2-34-226-249-44.compute-1.amazonaws.com" port="22" privateKey="$USER_HOME$/Desktop/nexus.pem" accessType="SFTP" keyPair="true">
-          <option name="port" value="22" />
-        </fileTransfer>
-      </webServer>
     </option>
   </component>
 </application>
