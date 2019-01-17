@@ -9,6 +9,11 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
+      <webServer id="25259546-5981-48b4-96f0-d89cd9846aa0" name="ec2-user@nexus:22" url="http:///">
+        <fileTransfer host="nexus" port="22" accessType="SFTP" authAgent="true">
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </application>
