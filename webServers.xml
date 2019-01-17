@@ -1,19 +1,6 @@
 <application>
   <component name="WebServers">
     <option name="servers">
-      <webServer id="0c14fa15-b1a7-4cec-99df-36afb6152ad1" name="nexus" url="http://ec2-52-207-216-180.compute-1.amazonaws.com">
-        <fileTransfer host="ec2-52-207-216-180.compute-1.amazonaws.com" port="22" privateKey="$USER_HOME$/.aws/nexus.pem" accessType="SFTP" keyPair="true">
-          <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" />
-          </advancedOptions>
-          <option name="port" value="22" />
-        </fileTransfer>
-      </webServer>
-      <webServer id="25259546-5981-48b4-96f0-d89cd9846aa0" name="ec2-user@nexus:22" url="http:///">
-        <fileTransfer host="nexus" port="22" accessType="SFTP" authAgent="true">
-          <option name="port" value="22" />
-        </fileTransfer>
-      </webServer>
       <webServer id="8c4fa0c9-f37a-451c-b4ee-80856ebed4ff" name="ec2-user@nexus.com:22" url="http:///">
         <fileTransfer host="nexus.com" port="22" accessType="SFTP" authAgent="true">
           <option name="port" value="22" />
