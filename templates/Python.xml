@@ -132,4 +132,10 @@
       <option name="Python_Class" value="false" />
     </context>
   </template>
+  <template name="run_query" value="import os&#10;&#10;import boto3&#10;import minions&#10;&#10;os.environ['MINIONS_USER_AGENT'] = 'local-query-testing'&#10;session = boto3.Session(region_name='us-east-1')&#10;&#10;query = &quot;&quot;&quot;&#10;    SELECT&#10;      accountId&#10;    FROM&#10;      hive.api.activity&#10;&#10;    &quot;&quot;&quot;&#10;&#10;result = minions.run_query(query, session)&#10;print(result)&#10;" description="Snippet to minions run query" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+    </context>
+  </template>
 </templateSet>
