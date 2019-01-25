@@ -7,14 +7,13 @@
       <mapping pattern="etl" type="Dockerfile" />
       <mapping ext="dockerfile" type="Dockerfile" />
       <mapping pattern=":test:" type="Native" />
+      <mapping pattern="p" type="PLAIN_TEXT" />
       <mapping pattern=".coveragerc" type="PLAIN_TEXT" />
       <mapping pattern="requirements" type="PLAIN_TEXT" />
       <mapping pattern=".coafile" type="PLAIN_TEXT" />
-      <mapping pattern="p" type="PLAIN_TEXT" />
       <mapping pattern="quotes_titles" type="PLAIN_TEXT" />
       <mapping ext="tpl" type="PLAIN_TEXT" />
       <mapping ext="mmd" type="PLAIN_TEXT" />
-      <mapping ext="pug" type="PLAIN_TEXT" />
       <mapping ext="cauldron" type="PLAIN_TEXT" />
       <mapping ext="lprof" type="PLAIN_TEXT" />
       <mapping ext="gz" type="PLAIN_TEXT" />
