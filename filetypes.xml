@@ -13,6 +13,7 @@
       <mapping pattern=".coafile" type="PLAIN_TEXT" />
       <mapping pattern="quotes_titles" type="PLAIN_TEXT" />
       <mapping ext="tpl" type="PLAIN_TEXT" />
+      <mapping ext="scss2" type="PLAIN_TEXT" />
       <mapping ext="mmd" type="PLAIN_TEXT" />
       <mapping ext="cauldron" type="PLAIN_TEXT" />
       <mapping ext="lprof" type="PLAIN_TEXT" />
