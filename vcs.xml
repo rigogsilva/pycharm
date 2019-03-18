@@ -258,6 +258,14 @@
           <option name="url" value="git@gitlab.wheniwork.com:scott.ernst/social-impact.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="git@gitlab.wheniwork.com:data/sanity/app-stream-ids.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="git@gitlab.wheniwork.com:data/sanity/app-stream-updates.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="$USER_HOME$/Documents/Projects" />
