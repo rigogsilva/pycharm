@@ -138,4 +138,10 @@
       <option name="Python_Class" value="false" />
     </context>
   </template>
+  <template name="testFunction" value="def test_$function$():&#10;    &quot;&quot;&quot;Should run function with no errors&quot;&quot;&quot;&#10;    &#10;    result = $function$()&#10;    assert 1 == result" description="Creates a test function" toReformat="false" toShortenFQNames="true">
+    <variable name="function" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
 </templateSet>
