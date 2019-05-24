@@ -310,6 +310,10 @@
           <option name="url" value="git@gitlab.wheniwork.com:data/services/binder-backend.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="git@gitlab.wheniwork.com:data/etl/customer-report-queuer.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="$USER_HOME$/Documents/Projects" />
