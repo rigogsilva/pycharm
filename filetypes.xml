@@ -10,6 +10,7 @@
       <mapping pattern=".coveragerc" type="PLAIN_TEXT" />
       <mapping pattern="QueryBox.scss" type="PLAIN_TEXT" />
       <mapping pattern="requirements" type="PLAIN_TEXT" />
+      <mapping pattern=".pypirc" type="PLAIN_TEXT" />
       <mapping pattern="tePro" type="PLAIN_TEXT" />
       <mapping pattern=".coafile" type="PLAIN_TEXT" />
       <mapping pattern=".envrc" type="PLAIN_TEXT" />
