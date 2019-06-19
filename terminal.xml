@@ -1,0 +1,7 @@
+<application>
+  <component name="TerminalOptionsProvider">
+    <option name="myUserSpecifiedEnvs">
+      <map />
+    </option>
+  </component>
+</application>
