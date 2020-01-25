@@ -426,6 +426,10 @@
           <option name="url" value="https://github.com/ageron/handson-ml2.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="git@gitlab.wheniwork.com:data/etl/x-ray-dql.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="$USER_HOME$/Documents/Projects" />
