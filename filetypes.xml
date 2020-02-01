@@ -8,8 +8,8 @@
       <mapping pattern="check" type="Dockerfile" />
       <mapping pattern=":test:" type="Native" />
       <mapping pattern=".coveragerc" type="PLAIN_TEXT" />
-      <mapping pattern="quotes_titles" type="PLAIN_TEXT" />
       <mapping pattern="QueryBox.scss" type="PLAIN_TEXT" />
+      <mapping pattern="quotes_titles" type="PLAIN_TEXT" />
       <mapping pattern="requirements" type="PLAIN_TEXT" />
       <mapping pattern=".pypirc" type="PLAIN_TEXT" />
       <mapping pattern="tePro" type="PLAIN_TEXT" />
