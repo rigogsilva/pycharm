@@ -2,7 +2,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="8c4fa0c9-f37a-451c-b4ee-80856ebed4ff" name="ec2-user@nexus.com:22" url="http:///">
-        <fileTransfer host="nexus.com" port="22" accessType="SFTP" authAgent="true">
+        <fileTransfer host="nexus.com" port="22" rootFolder="/home/ec2-user/finance-backend" accessType="SFTP" authAgent="true">
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
