@@ -4,27 +4,27 @@
     <extensionMap>
       <mapping pattern=".envrc" type="Bash" />
       <mapping pattern="notebook" type="Dockerfile" />
-      <mapping pattern="etl" type="Dockerfile" />
       <mapping pattern="check" type="Dockerfile" />
+      <mapping pattern="etl" type="Dockerfile" />
       <mapping pattern=":test:" type="Native" />
-      <mapping pattern=".coveragerc" type="PLAIN_TEXT" />
-      <mapping pattern="QueryBox.scss" type="PLAIN_TEXT" />
-      <mapping pattern="quotes_titles" type="PLAIN_TEXT" />
-      <mapping pattern="requirements" type="PLAIN_TEXT" />
-      <mapping pattern=".pypirc" type="PLAIN_TEXT" />
-      <mapping pattern="tePro" type="PLAIN_TEXT" />
       <mapping pattern=".coafile" type="PLAIN_TEXT" />
+      <mapping pattern=".coveragerc" type="PLAIN_TEXT" />
+      <mapping pattern=".pypirc" type="PLAIN_TEXT" />
       <mapping pattern="p" type="PLAIN_TEXT" />
-      <mapping ext="tpl" type="PLAIN_TEXT" />
+      <mapping pattern="tePro" type="PLAIN_TEXT" />
+      <mapping pattern="quotes_titles" type="PLAIN_TEXT" />
+      <mapping pattern="QueryBox.scss" type="PLAIN_TEXT" />
+      <mapping pattern="requirements" type="PLAIN_TEXT" />
       <mapping ext="mmd" type="PLAIN_TEXT" />
       <mapping ext="hdf5" type="PLAIN_TEXT" />
-      <mapping ext="gz" type="PLAIN_TEXT" />
+      <mapping ext="scss2" type="PLAIN_TEXT" />
+      <mapping ext="tpl" type="PLAIN_TEXT" />
       <mapping ext="lprof" type="PLAIN_TEXT" />
       <mapping ext="cauldron" type="PLAIN_TEXT" />
-      <mapping ext="scss2" type="PLAIN_TEXT" />
-      <removed_mapping ext="cmd" approved="true" type="PLAIN_TEXT" />
+      <mapping ext="gz" type="PLAIN_TEXT" />
       <removed_mapping ext="bat" approved="true" type="PLAIN_TEXT" />
       <removed_mapping ext="log" approved="true" type="PLAIN_TEXT" />
+      <removed_mapping ext="cmd" approved="true" type="PLAIN_TEXT" />
       <mapping pattern="first_module" type="Python" />
       <removed_mapping ext="scss" approved="true" type="SCSS" />
       <mapping ext="scss" type="Sass" />
