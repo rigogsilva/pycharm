@@ -526,6 +526,10 @@
           <option name="url" value="git@gitlab.wheniwork.com:data/sanity/atropos-memory-usage.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="git@gitlab.wheniwork.com:data/etl/x-ray-revenue.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="$USER_HOME$/Documents/Projects" />
@@ -539,8 +543,5 @@
         <option value="3" />
       </list>
     </option>
-  </component>
-  <component name="VcsApplicationSettings">
-    <option name="SHOW_LST_WORD_DIFFERENCES" value="false" />
   </component>
 </application>
