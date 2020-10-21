@@ -562,6 +562,10 @@
           <option name="url" value="git@gitlab.com:wiwdata/services/whocan-backend.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="git@gitlab.com:wiwdata/pipper/activity-pattern.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="$USER_HOME$/Documents/Projects" />
