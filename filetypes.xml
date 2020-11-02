@@ -28,6 +28,7 @@
       <removed_mapping ext="cmd" approved="true" type="PLAIN_TEXT" />
       <mapping pattern="first_module" type="Python" />
       <removed_mapping ext="scss" approved="true" type="SCSS" />
+      <mapping pattern="missies-apps" type="SQL" />
       <mapping ext="scss" type="Sass" />
       <removed_mapping ext="bat" approved="true" type="PLAIN_TEXT" />
       <removed_mapping ext="log" approved="true" type="PLAIN_TEXT" />
