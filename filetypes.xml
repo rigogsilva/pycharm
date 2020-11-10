@@ -20,6 +20,7 @@
       <mapping pattern=".flak8" type="PLAIN_TEXT" />
       <mapping ext="hdf5" type="PLAIN_TEXT" />
       <mapping ext="scss2" type="PLAIN_TEXT" />
+      <mapping ext="toml" type="PLAIN_TEXT" />
       <mapping ext="tpl" type="PLAIN_TEXT" />
       <mapping ext="gz" type="PLAIN_TEXT" />
       <mapping ext="mmd" type="PLAIN_TEXT" />
