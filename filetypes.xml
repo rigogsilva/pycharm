@@ -6,6 +6,7 @@
       <mapping pattern="etl" type="Dockerfile" />
       <mapping pattern="notebook" type="Dockerfile" />
       <mapping pattern=":test:" type="Native" />
+      <mapping pattern="first" type="PLAIN_TEXT" />
       <mapping pattern=".pypirc" type="PLAIN_TEXT" />
       <mapping pattern="quotes_titles" type="PLAIN_TEXT" />
       <mapping pattern=".flake8" type="PLAIN_TEXT" />
@@ -16,6 +17,7 @@
       <mapping pattern="QueryBox.scss" type="PLAIN_TEXT" />
       <mapping pattern="requirements" type="PLAIN_TEXT" />
       <mapping pattern="tePro" type="PLAIN_TEXT" />
+      <mapping pattern="no-bs-second" type="PLAIN_TEXT" />
       <mapping pattern=".coveragerc" type="PLAIN_TEXT" />
       <mapping pattern=".flak8" type="PLAIN_TEXT" />
       <mapping ext="hdf5" type="PLAIN_TEXT" />
