@@ -18,6 +18,7 @@
       <mapping pattern="requirements" type="PLAIN_TEXT" />
       <mapping pattern="tePro" type="PLAIN_TEXT" />
       <mapping pattern="no-bs-second" type="PLAIN_TEXT" />
+      <mapping pattern="no-bs" type="PLAIN_TEXT" />
       <mapping pattern=".coveragerc" type="PLAIN_TEXT" />
       <mapping pattern=".flak8" type="PLAIN_TEXT" />
       <mapping ext="hdf5" type="PLAIN_TEXT" />
