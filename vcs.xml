@@ -602,6 +602,10 @@
           <option name="url" value="git@gitlab.com:wiwdata/pipper/terraformer.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="git@gitlab.com:wiwdata/applications/data-catalog-backend.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="$USER_HOME$/Documents/Projects" />
