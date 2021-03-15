@@ -610,6 +610,10 @@
           <option name="url" value="git@gitlab.com:wiwdata/pipper/chant.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="git@gitlab.com:wiwdata/etl/account-shifts.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="$USER_HOME$/Documents/Projects" />
