@@ -2,27 +2,27 @@
   <component name="FileTypeManager" version="17">
     <ignoreFiles list="*$py.class;*.hprof;*.pyc;*.pyo;*.rbc;*.yarb;*~;.DS_Store;.git;.hg;.svn;CVS;__pycache__;_svn;vssver.scc;vssver2.scc;" />
     <extensionMap>
+      <mapping pattern="notebook" type="Dockerfile" />
       <mapping pattern="check" type="Dockerfile" />
       <mapping pattern="etl" type="Dockerfile" />
-      <mapping pattern="notebook" type="Dockerfile" />
       <mapping pattern=":test:" type="Native" />
       <mapping pattern="first" type="PLAIN_TEXT" />
       <mapping pattern=".pypirc" type="PLAIN_TEXT" />
-      <mapping pattern="quotes_titles" type="PLAIN_TEXT" />
-      <mapping pattern=".flake8" type="PLAIN_TEXT" />
-      <mapping pattern="p" type="PLAIN_TEXT" />
-      <mapping pattern="build" type="PLAIN_TEXT" />
       <mapping pattern="buildTwo" type="PLAIN_TEXT" />
       <mapping pattern="in_clause" type="PLAIN_TEXT" />
       <mapping pattern=".coafile" type="PLAIN_TEXT" />
       <mapping pattern="QueryBox.scss" type="PLAIN_TEXT" />
       <mapping pattern="requirements" type="PLAIN_TEXT" />
+      <mapping pattern="quotes_titles" type="PLAIN_TEXT" />
+      <mapping pattern=".flake8" type="PLAIN_TEXT" />
+      <mapping pattern="p" type="PLAIN_TEXT" />
       <mapping pattern="tePro" type="PLAIN_TEXT" />
       <mapping pattern="join_clause" type="PLAIN_TEXT" />
       <mapping pattern="no-bs-second" type="PLAIN_TEXT" />
-      <mapping pattern="no-bs" type="PLAIN_TEXT" />
       <mapping pattern=".coveragerc" type="PLAIN_TEXT" />
+      <mapping pattern="no-bs" type="PLAIN_TEXT" />
       <mapping pattern=".flak8" type="PLAIN_TEXT" />
+      <mapping pattern="build" type="PLAIN_TEXT" />
       <mapping ext="hdf5" type="PLAIN_TEXT" />
       <mapping ext="scss2" type="PLAIN_TEXT" />
       <mapping ext="toml" type="PLAIN_TEXT" />
