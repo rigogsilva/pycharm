@@ -622,6 +622,10 @@
           <option name="url" value="git@gitlab.com:wiwdata/etl/hourly-endpoint-performance.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="git@gitlab.com:wiwdata/cauldron/training-template.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="$USER_HOME$/Documents/Projects" />
