@@ -1,7 +1,7 @@
 <application>
   <component name="SshConfigs">
     <configs>
-      <sshConfig authType="OPEN_SSH" host="nexus.com" id="7b562701-6447-4a9f-843b-fbab55f89d96" port="22" customName="ec2-user@nexus.com:22" nameFormat="CUSTOM" username="ec2-user">
+      <sshConfig authType="OPEN_SSH" connectionConfig="{&quot;serverAliveInterval&quot;:300}" host="nexus.com" id="7b562701-6447-4a9f-843b-fbab55f89d96" port="22" customName="ec2-user@nexus.com:22" nameFormat="CUSTOM" username="ec2-user">
         <option name="customName" value="ec2-user@nexus.com:22" />
       </sshConfig>
     </configs>
